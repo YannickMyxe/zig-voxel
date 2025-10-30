@@ -7,7 +7,7 @@ pub fn main() anyerror!void {
     const screenWidth = 800;
     const screenHeight = 450;
 
-    rl.initWindow(screenWidth, screenHeight, "raylib-zig [core] example - basic window");
+    rl.initWindow(screenWidth, screenHeight, "Zig voxel engine");
     defer rl.closeWindow(); // Close window and OpenGL context
 
     rl.setTargetFPS(60); // Set our game to run at 60 frames-per-second
@@ -27,7 +27,7 @@ pub fn main() anyerror!void {
 
         rl.clearBackground(.white);
 
-        rl.drawText("Congrats! You created your first window!", 190, 200, 20, .light_gray);
+        rl.drawText("Zig Voxel engine running", 190, 200, 20, .light_gray);
         //----------------------------------------------------------------------------------
     }
 }
